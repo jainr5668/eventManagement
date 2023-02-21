@@ -1,0 +1,9 @@
+export class ##Model {
+    id:string;
+    event:any;
+    
+    set##Values(id:string, event:any){
+        this.id = id;
+        this.event = event ?? null;
+    }
+}
