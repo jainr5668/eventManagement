@@ -1,0 +1,31 @@
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { clickListenerEvent } from "@patterns/common.model";
+import { ##Model } from "./$$.model";
+import { Observable } from "rxjs";
+import { StringIdsType } from "src/stringIds";
+
+@Component({
+  selector: 'pattern-$$',
+  templateUrl: './$$.component.html',
+  styleUrls: ['./$$.component.css']
+})
+export class ##Component {
+  @Input() public $$: ##Model;
+
+  @Output() clickListener = new EventEmitter();
+
+  constructor(private translate: TranslateService) {}
+
+  public getLocalizedString$(stringId: StringIdsType): Observable<string> {
+    return this.translate.stream(stringId);
+  }
+
+  onClicked(event: Event) {
+    const eventObject = new clickListenerEvent(event, this.$$.id);
+    if (this.$$.event) {
+      this.$$.event(eventObject);
+    } else {
+      this.clickListener.emit(eventObject);
+    }
+  }
+}
