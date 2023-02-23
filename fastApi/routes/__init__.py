@@ -8,6 +8,7 @@ from fastapi import APIRouter
 
 class Routes:
     __router = None
+
     def __init__(self) -> None:
         self.__routers = {
             "/auth/v1": [Authentication],
@@ -28,4 +29,3 @@ class Routes:
                 service_obj = __router()
                 routes.include_router(service_obj.router)
             self.__router.include_router(routes)
-    
