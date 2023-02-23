@@ -10,8 +10,8 @@ class Routes:
     __router = None
     def __init__(self) -> None:
         self.__routers = {
+            "/auth/v1": [Authentication],
             "/ews/v1": [Event, Game, Match],
-            "/auth/v1": [Authentication]
         }
 
     @property
