@@ -1,8 +1,8 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core";
-import { TranslateService } from "@ngx-translate/core";
-import { Observable } from "rxjs";
-import { StringIdsType } from "src/stringIds";
-import { CardModel } from "./card.model";
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+import { StringIdsType } from 'src/stringIds';
+import { CardModel } from './card.model';
 
 @Component({
   selector: 'pattern-card',
@@ -14,8 +14,7 @@ export class CardComponent {
 
   @Output() clickListener = new EventEmitter();
 
-  constructor(private translate: TranslateService) {
-  }
+  constructor(private translate: TranslateService) {}
 
   public getLocalizedString$(stringId: StringIdsType): Observable<string> {
     return this.translate.stream(stringId);

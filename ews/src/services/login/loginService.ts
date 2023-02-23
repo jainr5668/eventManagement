@@ -1,5 +1,3 @@
-import { BaseService } from "../baseService";
+import { BaseService } from '../baseService';
 
-export class LoginService extends BaseService<string>{
-
-}
+export class LoginService extends BaseService<string> {}

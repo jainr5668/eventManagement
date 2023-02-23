@@ -1,20 +1,19 @@
-export enum ElementType{
-    SELECT = 'select',
-    TEXT = 'text',
-    PASSWORD = 'password',
-    TOGGLE = 'toggle',
-    EMAIL = 'email'
-
+export enum ElementType {
+  SELECT = 'select',
+  TEXT = 'text',
+  PASSWORD = 'password',
+  TOGGLE = 'toggle',
+  EMAIL = 'email',
 }
-export class SelectOption{
-    value: string;
-    label: string;
-    disabled: boolean;
-    constructor(value: string, label:string, disabled?:boolean){
-        this.label = label;
-        this.value = value;
-        this.disabled = disabled;
-    }
+export class SelectOption {
+  value: string;
+  label: string;
+  disabled: boolean;
+  constructor(value: string, label: string, disabled?: boolean) {
+    this.label = label;
+    this.value = value;
+    this.disabled = disabled;
+  }
 }
 export class ElementModel {
   id: string;
@@ -103,7 +102,7 @@ export class ElementModel {
     event?: any,
     colspan?: number
   ) {
-    this.commonProperty(id, label, model, property, event,colspan);
+    this.commonProperty(id, label, model, property, event, colspan);
     this.type = ElementType.EMAIL;
   }
 }

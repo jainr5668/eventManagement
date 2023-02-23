@@ -1,9 +1,9 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
-import { TranslateService } from "@ngx-translate/core";
-import { ButtonModel, ButtonTypeEnum } from "@patterns/button";
-import { clickListenerEvent } from "@patterns/common.model";
-import { Observable } from "rxjs";
-import { StringIdsType } from "src/stringIds";
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { ButtonModel, ButtonTypeEnum } from '@patterns/button';
+import { clickListenerEvent } from '@patterns/common.model';
+import { Observable } from 'rxjs';
+import { StringIdsType } from 'src/stringIds';
 
 @Component({
   selector: 'pattern-button',
@@ -26,7 +26,7 @@ export class ButtonComponent implements OnInit {
   public getLocalizedString$(stringId: StringIdsType): Observable<string> {
     return this.translate.stream(stringId);
   }
-  
+
   ngOnInit(): void {
     this.generateClass();
   }
