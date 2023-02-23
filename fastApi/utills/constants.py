@@ -1,4 +1,6 @@
 import enum
+
+
 class MetaConstant(type):
     def __getattr__(cls, key):
         try:
@@ -19,6 +21,7 @@ class Constants(object, metaclass=MetaConstant):
 
     def __setattr__(self, name, value):
         raise TypeError
+
 
 class DatabaseQueryStringSelect(Constants):
     pass
