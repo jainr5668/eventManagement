@@ -66,7 +66,7 @@ export class FooterModel {
         this.buttons.push(button);
         break;
       case FooterTypeEnum.CUSTOM:
-        this.buttons = buttons?  buttons.slice(0, 2) : null;
+        this.buttons = buttons ? buttons.slice(0, 2) : null;
         break;
       default:
         break;

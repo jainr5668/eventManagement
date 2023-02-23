@@ -6,12 +6,7 @@ import { FooterModule } from '@patterns/footer';
 import { CardComponent } from './card.component';
 @NgModule({
   declarations: [CardComponent],
-  imports: [
-    CommonModule,
-    FooterModule,
-    ContentModule,
-    TranslateModule
-  ],
+  imports: [CommonModule, FooterModule, ContentModule, TranslateModule],
   exports: [CardComponent],
 })
 export class CardModule {}

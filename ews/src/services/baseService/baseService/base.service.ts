@@ -7,12 +7,9 @@ import {
 import { catchError, map } from 'rxjs/operators';
 import { of, Observable } from 'rxjs';
 
-
-export class BaseService<T>{
-    
-    /**
-     * Make HTTP client available to child classes
-     */
-    public http: HttpClient | undefined;
-
+export class BaseService<T> {
+  /**
+   * Make HTTP client available to child classes
+   */
+  public http: HttpClient | undefined;
 }

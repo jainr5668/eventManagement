@@ -1,11 +1,11 @@
-import { StringIdsType } from "src/stringIds";
-import { LinkTarget } from "../common.model";
+import { StringIdsType } from 'src/stringIds';
+import { LinkTarget } from '../common.model';
 
 export enum ButtonTypeEnum {
   PRIMARY = 'primary',
   SECONDRARY = 'secondrary',
   DELETE = 'delete',
-  WARNING = 'warning'
+  WARNING = 'warning',
 }
 
 export class ButtonModel {

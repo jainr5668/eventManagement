@@ -13,7 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatButtonModule,
     MatDividerModule,
     MatIconModule,
-    TranslateModule
+    TranslateModule,
   ],
   exports: [ButtonComponent],
 })

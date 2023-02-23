@@ -1,3 +1,3 @@
-export * from './content.component'
-export * from './content.module'
-export * from './content.model'
+export * from './content.component';
+export * from './content.module';
+export * from './content.model';

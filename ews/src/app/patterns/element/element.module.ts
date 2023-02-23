@@ -19,7 +19,7 @@ import { ButtonModule } from '@patterns/button';
     MatFormFieldModule,
     MatInputModule,
     MatSlideToggleModule,
-    TranslateModule
+    TranslateModule,
   ],
   exports: [ElementComponent],
 })

@@ -10,5 +10,5 @@ export enum StringIds {
   cLANGUAGE = 'cLANGUAGE',
   clASTNAME = 'cLASTNAME',
   cPASSWORD = 'cPASSWORD',
-  cTOGGLE = 'cTOGGLE'
+  cTOGGLE = 'cTOGGLE',
 }

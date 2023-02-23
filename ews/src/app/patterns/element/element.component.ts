@@ -1,9 +1,9 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
-import { FormGroup } from "@angular/forms";
-import { TranslateService } from "@ngx-translate/core";
-import { clickListenerEvent } from "@patterns/common.model";
-import { Observable } from "rxjs";
-import { StringIdsType } from "src/stringIds";
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
+import { clickListenerEvent } from '@patterns/common.model';
+import { Observable } from 'rxjs';
+import { StringIdsType } from 'src/stringIds';
 import { ElementModel, ElementType } from './element.model';
 
 @Component({
@@ -18,13 +18,12 @@ export class ElementComponent implements OnInit {
   @Output() clickListener = new EventEmitter();
   elementType = ElementType;
 
-  constructor(private translate: TranslateService) {
-  }
+  constructor(private translate: TranslateService) {}
 
   public getLocalizedString$(stringId: StringIdsType): Observable<string> {
     return this.translate.stream(stringId);
   }
-  
+
   ngOnInit(): void {
     this.formGroup
       .get(this.element.id)

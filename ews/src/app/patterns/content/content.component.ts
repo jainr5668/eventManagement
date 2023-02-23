@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
-import { FormControl, FormGroup } from "@angular/forms";
-import { TranslateService } from "@ngx-translate/core";
-import { clickListenerEvent } from "@patterns/common.model";
-import { Observable } from "rxjs";
-import { StringIdsType } from "src/stringIds";
-import { ContentModel } from "./content.model";
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
+import { clickListenerEvent } from '@patterns/common.model';
+import { Observable } from 'rxjs';
+import { StringIdsType } from 'src/stringIds';
+import { ContentModel } from './content.model';
 
 @Component({
   selector: 'pattern-content',

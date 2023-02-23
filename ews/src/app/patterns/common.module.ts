@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-const module = [TranslateModule, , HttpClientModule]
-
+const module = [TranslateModule, , HttpClientModule];
 
 @NgModule({
   imports: [TranslateModule, HttpClientModule],
