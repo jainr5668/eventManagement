@@ -20,21 +20,21 @@ class Match:
         # Matches
         @routes.get('')
         def matches():
-            return {"api":"matches"}
+            return self.__services.match.demo()
         
         # Matches
         @routes.post('')
         def matches():
-            return {"api":"matches","method":"POST"}
+            return self.__services.match.demo()
         
         # Event detail GET
         @routes.get('/{matchId}')
         def matches(matchId:int):
-            return {"api":"matches", "matchId":matchId}
+            return self.__services.match.demo()
         
         # Event detail PATCH
         @routes.patch('/{matchId}')
         def matches(matchId:int):
-            return {"api":"matches", "matchId":matchId}
+            return self.__services.match.demo()
         
         return routes

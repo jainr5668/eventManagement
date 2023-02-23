@@ -20,21 +20,21 @@ class Game:
         # Games
         @routes.get('')
         def games():
-            return self.__services.__game.demo()
+            return self.__services.game.demo()
         
         # Games
         @routes.post('')
         def games():
-            return self.__services.__game.demo()
+            return self.__services.game.demo()
         
         # Event detail GET
         @routes.get('/{gameId}')
         def games(gameId:int):
-            return self.__services.__game.demo()
+            return self.__services.game.demo()
         
         # Event detail PATCH
         @routes.patch('/{gameId}')
         def games(gameId:int):
-            return self.__services.__game.demo()
+            return self.__services.game.demo()
         
         return routes

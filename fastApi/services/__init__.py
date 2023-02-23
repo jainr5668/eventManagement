@@ -35,7 +35,7 @@ class Services:
         return self.__game
     
     @property
-    def Match(self):
+    def match(self):
         if self.__match is None:
             self.__match = Match(self.__common)
         return self.__match
